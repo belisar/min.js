@@ -55,9 +55,10 @@ Min.prototype = {
 	 * @param el {Dom}
 	 * @param event {Strig}
 	 * @param callback {Function}
+	 * @param opt {Boolean}
 	 */	
-	addListener: function(el, event, callback) {
-		
+	addListener: function(el, event, callback, opt) {
+		el.addEventListener(event, callback, opt);
 	}	
 };
 
